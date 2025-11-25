@@ -17,6 +17,48 @@ public class LoadScene : MonoBehaviour
 
     public CinemachineVirtualCamera targetCamera;
 
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene("IntroUI");
+    }
+
+    public void ReloadCurrentScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    public void GameoverScene()
+    {
+        SceneManager.LoadScene("GameOverScene");
+    }
+    public void Outtro()
+    {
+        SceneManager.LoadScene("Outtro");
+    }
+
+    public void ChoosegMenu()
+    {
+        SceneManager.LoadScene("ChooseLevel");
+    }
+    public void SettingMenu()
+    {
+        SceneManager.LoadScene("SettingMenu");
+    }
+
+    public void LoadNextLevel()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex + 1);
+    }
+    public void LoadLevel(string levelName)
+    {
+        SceneManager.LoadScene(levelName);
+    }
+
     // Start is called before the first frame update
     void Start()
     {

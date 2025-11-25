@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6708830693235638963}
   - component: {fileID: 3884703284093959795}
   - component: {fileID: 3884703284093959794}
+  - component: {fileID: 8920355849879378592}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -108,7 +109,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!60 &6708830693235638963
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -181,3 +182,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 100
   currentHP: 0
+--- !u!114 &8920355849879378592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3884703284093959787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2da6b2660d16124e91d7bbee317c032, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 3
+  lifeText: {fileID: 0}
+  lifeIcon: {fileID: 0}
